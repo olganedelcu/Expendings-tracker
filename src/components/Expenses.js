@@ -1,7 +1,7 @@
 import ExpenseItem from "./Expenseltem";
 
 
-function Expenses(props) {
+function NewExpense(props) {
   
   return (
   <div className = "expenses">
@@ -29,4 +29,4 @@ function Expenses(props) {
   );
 }
 
-export default Expenses;
+export default NewExpense;
