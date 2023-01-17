@@ -13,9 +13,12 @@ const ExpenseForm = () => {
 
   const titleChangeHandler = (event) => {
     // setEnteredTitle(event.target.value);Making sure the state is stored and suvives
-    setUserInput({
-      ...userInput, // ensuring other values aren't thrown away but that they are part of the newState
-      enteredTitle: event.target.value,
+    // setUserInput({
+    //   ...userInput, // ensuring other values aren't thrown away but that they are part of the newState
+    //   enteredTitle: event.target.value,
+    // })
+    setUserInput((prevState) => {
+      return {...prevState, enteredTitle: event.target.value};
     })
   };
 
