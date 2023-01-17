@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
-    const [selectedYear, setSelectedYear] = useState(''); // initial value empty string
+    const [selectedYear, setSelectedYear] = useState('2020'); // initial value empty string
 
     const selectedYearHandler = (selectedYear) => {
         setSelectedYear(selectedYear.target.value);
     }
     console.log(selectedYear);    
     props.onSaveYearSelected();
-    setSelectedYear('');
+    setSelectedYear('')
 
   return (
     <div className="expenses-filter">
