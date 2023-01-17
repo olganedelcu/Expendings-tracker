@@ -5,12 +5,11 @@ import ExpenseFilter from "./ExpensesFilter.js";
 
 const NewExpense = (props) => {
   const saveYearSelectedHandler = (selectedYear) => {
-    const yearSelectedData = {
+    const selectedYearData = {
       ...selectedYear,
-      id: Math.random().toString(),
     };
-    console.log(yearSelectedData);
-    props.onSaveYearSelected(yearSelectedData);
+    console.log(selectedYearData);
+    props.onAddYearSelected(selectedYearData);
   };
   return (
     <div>
