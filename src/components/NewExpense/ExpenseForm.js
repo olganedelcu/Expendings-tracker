@@ -38,17 +38,18 @@ const ExpenseForm = (props) => {
   };
 
   const submitHandler = (event) => {
-    event.preventDefault(); // call this event so a request is not sent to our server
+    event.preventDefault();
 
     const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
-      date: new Date(enteredDate), // constructing a new date with the in-buld date contructor which will parse that date string and convert it into a date object
+      date: new Date(enteredDate),
     };
-    props.onSaveExpenseData();
-    setEnteredTitle(''); // clearing the input
-    setEnteredAmount('');
-    setEnteredDate('');
+
+    props.onSaveExpenseData(expenseData);
+    setEnteredTitle("");
+    setEnteredAmount("");
+    setEnteredDate("");
   };
 
   return (
