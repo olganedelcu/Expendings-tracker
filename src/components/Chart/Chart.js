@@ -5,7 +5,7 @@ import './Chart.css';
 
 const Chart = props => {
     return <div className="chart">
-        <ChartBar/>
+        {props.dataPoints.map(dataPoint => <ChartBar/>)}
     </div>
 }
 export default Chart;

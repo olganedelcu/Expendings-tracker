@@ -1,8 +1,9 @@
 import React from 'react'
 
 
-const ChartBar = () => {
-    return <>
+const ChartBar = (props) => {
+    return <className="chart">
+    {}
     </>
 }
 
