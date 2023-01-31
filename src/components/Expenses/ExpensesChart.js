@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import Chart from './Chart/Chart.js';
+import Chart from "./Chart/Chart.js";
 
 const ExpensesChart = (props) => {
-    return <>
-    <Chart/>
+  const chartDataPoints = [{ label: "Jan", value: 0 }];
+
+  return (
+    <>
+      <Chart />
     </>
-}
+  );
+};
 
 export default ExpensesChart;
