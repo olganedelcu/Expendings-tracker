@@ -14,7 +14,7 @@ const Chart = (props) => {
         <ChartBar
           key={dataPoint.label}
           value={dataPoint.value} // value in relation with our maxValue to fill it correspondly 
-          maxValue={null}
+          maxValue={totalMaximum}
           label={dataPoint.label}
         />
       ))}
