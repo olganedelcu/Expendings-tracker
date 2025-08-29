@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  background: linear-gradient(135deg, #ffeef8 0%, #ffe0f0 35%, #fcf4ff 100%);
+  min-height: 100vh;
 }
 

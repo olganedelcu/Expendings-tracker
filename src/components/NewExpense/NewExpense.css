@@ -1,38 +1,45 @@
 .new-expense {
-    background-color: #a892ee;
-    padding: 1rem;
+    background: linear-gradient(135deg, #ffd4e5, #ffb8d1);
+    padding: 1.5rem;
     margin: 2rem auto;
     width: 50rem;
     max-width: 95%;
-    border-radius: 12px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 20px rgba(255, 182, 193, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
   }
   
   .new-expense button {
     font: inherit;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 1px solid #40005d;
-    background-color: #40005d;
+    border: 1px solid #ff99cc;
+    background: linear-gradient(135deg, #ff99cc, #ffb3d9);
     color: white;
     border-radius: 12px;
     margin-right: 1rem;
+    box-shadow: 0 3px 10px rgba(255, 153, 204, 0.3);
+    transition: all 0.3s ease;
   }
   
   .new-expense button:hover,
   .new-expense button:active {
-    background-color: #510674;
-    border-color: #510674;
+    background: linear-gradient(135deg, #ff80bf, #ff99cc);
+    border-color: #ff80bf;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 153, 204, 0.4);
   }
   
   .new-expense button.alternative {
-    color: #220131;
+    color: #8b6b8b;
     border-color: transparent;
     background-color: transparent;
+    box-shadow: none;
   }
   
   .new-expense button.alternative:hover,
   .new-expense button.alternative:active {
-    background-color: #ddb3f8;
+    background-color: rgba(255, 220, 230, 0.5);
+    transform: none;
   }

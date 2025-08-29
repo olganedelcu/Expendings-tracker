@@ -10,15 +10,25 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
+  color: #6b5b6b;
 }
 
 .new-expense__control input {
   font: inherit;
-  padding: 0.5rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 192, 203, 0.3);
   width: 20rem;
   max-width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.new-expense__control input:focus {
+  outline: none;
+  border-color: #ffb3d9;
+  box-shadow: 0 0 0 3px rgba(255, 179, 217, 0.1);
+  background: white;
 }
 
 .new-expense__actions {
