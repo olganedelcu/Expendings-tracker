@@ -7,8 +7,8 @@ import './Expenses.css';
 
 
 
-const NewExpense = (props) => {
-  const [filteredYear, setFilteredYear] = useState("2023");
+const Expenses = (props) => {
+  const [filteredYear, setFilteredYear] = useState("2026");
 
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
@@ -31,6 +31,6 @@ const NewExpense = (props) => {
   );
 };
 
-export default NewExpense;
+export default Expenses;
 
 
